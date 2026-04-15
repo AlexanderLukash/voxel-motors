@@ -1,4 +1,5 @@
 {
     "creativeTab.voxel-motors": "Voxel Motors",
-    "item.voxel-motors.wrench": "Гайковий ключ"
+    "item.voxel-motors.wrench": "Гайковий ключ",
+    "item.voxel-motors.wrench.desc": "Надійний інструмент для механічних робіт."
 }
