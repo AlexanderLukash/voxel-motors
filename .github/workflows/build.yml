@@ -19,10 +19,18 @@ jobs:
         with:
           java-version: '25'
           distribution: 'microsoft'
+      - name: setup python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
+      - name: install pre-commit
+        run: python -m pip install pre-commit
+      - name: run pre-commit checks
+        run: pre-commit run --all-files
       - name: build
-        run: ./gradlew build
+        run: ./gradlew build -x check
       - name: capture build artifacts
         uses: actions/upload-artifact@v7
         with:
