@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ii",
+        "ic",
+        " r"
+    ],
+    "key": {
+        "i": "minecraft:iron_ingot",
+        "c": "minecraft:copper_ingot",
+        "r": "voxel-motors:iron_rod"
+    },
+    "result": {
+        "id": "voxel-motors:wrench",
+        "count": 1
+    }
+}

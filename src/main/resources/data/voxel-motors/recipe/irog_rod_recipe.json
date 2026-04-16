@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "i",
+        "i"
+    ],
+    "key": {
+        "i": "minecraft:iron_ingot"
+    },
+    "result": {
+        "id": "voxel-motors:iron_rod",
+        "count": 1
+    }
+}

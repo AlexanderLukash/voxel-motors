@@ -1,7 +1,8 @@
 package lukash.voxelmotors.registry;
 
 import lukash.voxelmotors.VoxelMotors;
-import lukash.voxelmotors.items.WrenchItem;
+import lukash.voxelmotors.items.ingredients.IronRodItem;
+import lukash.voxelmotors.items.tools.WrenchItem;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -15,7 +16,9 @@ import java.util.function.Function;
 
 public enum ItemsRegistry {
 
-    WRENCH("wrench", WrenchItem::new);
+    WRENCH("wrench", WrenchItem::new),
+    IRON_ROD("iron_rod", IronRodItem::new);
+
     private final String pathName;
     private final Function<Item.Properties, Item> itemFactory;
     private Item item;

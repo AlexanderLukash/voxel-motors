@@ -23,10 +23,14 @@ public final class CreativeTabsRegistry {
 
     public static void registerAll() {
         Item wrench = Objects.requireNonNull(ItemsRegistry.WRENCH.get());
+        Item ironRod = Objects.requireNonNull(ItemsRegistry.IRON_ROD.get());
         CreativeModeTab tab = FabricCreativeModeTab.builder()
                 .title(Component.translatable("creativeTab." + VoxelMotors.MOD_ID))
                 .icon(() -> new ItemStack(wrench))
-                .displayItems((context, entries) -> entries.accept(wrench))
+                .displayItems((context, entries) -> {
+                    entries.accept(wrench);
+                    entries.accept(ironRod);
+                })
                 .build();
 
         Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Objects.requireNonNull(TAB_KEY), tab);

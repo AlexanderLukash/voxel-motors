@@ -1,5 +1,6 @@
 {
     "creativeTab.voxel-motors": "Voxel Motors",
     "item.voxel-motors.wrench": "Wrench",
-    "item.voxel-motors.wrench.desc": "A sturdy tool for mechanical work."
+    "item.voxel-motors.wrench.desc": "A sturdy tool.",
+    "item.voxel-motors.iron_rod": "Iron Rod"
 }
