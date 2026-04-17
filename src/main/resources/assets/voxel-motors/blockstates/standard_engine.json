@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "voxel-motors:block/standard_engine", "y": 180 },
+    "facing=south": { "model": "voxel-motors:block/standard_engine", "y": 0 },
+    "facing=west": { "model": "voxel-motors:block/standard_engine", "y": 90 },
+    "facing=east": { "model": "voxel-motors:block/standard_engine", "y": 270 }
+  }
+}

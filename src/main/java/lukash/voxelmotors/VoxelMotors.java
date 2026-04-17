@@ -5,6 +5,8 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import lukash.voxelmotors.registry.BlockEntityRegistry;
+import lukash.voxelmotors.registry.BlockRegistry;
 import lukash.voxelmotors.registry.CreativeTabsRegistry;
 import lukash.voxelmotors.registry.ItemsRegistry;
 
@@ -22,6 +24,8 @@ public class VoxelMotors implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Hello Fabric world!");
+		BlockRegistry.init();
+		BlockEntityRegistry.init();
 		ItemsRegistry.registerAll();
 		CreativeTabsRegistry.registerAll();
 	}
