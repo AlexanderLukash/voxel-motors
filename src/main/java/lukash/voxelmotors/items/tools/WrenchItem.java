@@ -28,14 +28,13 @@ public class WrenchItem extends Item {
 	}
 
 	@Override
-	@SuppressWarnings({"null", "deprecation"})
+	@SuppressWarnings({"deprecation"})
 	public void appendHoverText(ItemStack stack, TooltipContext context, TooltipDisplay display, Consumer<Component> tooltipAdder, TooltipFlag tooltipFlag) {
 		tooltipAdder.accept(Component.translatable("item.voxel-motors.wrench.desc").withStyle(ChatFormatting.GRAY));
 		super.appendHoverText(stack, context, display, tooltipAdder, tooltipFlag);
 	}
 
 	@Override
-	@SuppressWarnings("null")
 	public @NotNull InteractionResult useOn(@NotNull UseOnContext context) {
 		Player player = context.getPlayer();
 		if (player == null || !player.isShiftKeyDown()) {
@@ -63,7 +62,7 @@ public class WrenchItem extends Item {
 	}
 
 	@Override
-	@SuppressWarnings({"null", "deprecation"})
+	@SuppressWarnings({"deprecation"})
 	public void hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
 		if (!attacker.level().isClientSide()) {
 			if (attacker instanceof Player player) {

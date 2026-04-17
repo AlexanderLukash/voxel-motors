@@ -1,0 +1,9 @@
+{
+	"model": {
+		"type": "minecraft:special",
+		"base": "voxel-motors:item/standard_engine",
+		"model": {
+			"type": "geckolib:geckolib"
+		}
+	}
+}
